@@ -236,7 +236,7 @@ local function HIQFK_fake_script() -- CashCounter.LocalScript
 				amount = tostring(amount)
 				return amount:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
 			end
-			script.Parent.Text = "$"..checking(amount).." dropped"
+			script.Parent.Text = "$"..checking(amount).." "
 		end)
 	end
 end
