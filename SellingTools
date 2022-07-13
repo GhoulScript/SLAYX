@@ -1,138 +1,242 @@
+wait(0.5)local ba=Instance.new("ScreenGui")
+local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+ca.Position=UDim2.new(0894267426272,727425632456,873275673563,62452545)ca.Size=UDim2.new(0,0,0)
+ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
+ca.TextSize=22;da.Parent=ca
+da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(999,999,999)
+da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(999,999,999)
+_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="made by ur mom "
+_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(999,999,999)
+ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+	bb:CaptureController()bb:ClickButton2(Vector2.new())
+	ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"end)
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local RainbotShit = Instance.new("Frame")
-local Frame_2 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
 local TARGETTEXTBOX = Instance.new("TextBox")
+local Line1 = Instance.new("Frame")
 local Goto = Instance.new("TextButton")
 local A_VIEW = Instance.new("TextButton")
-local ADminBase = Instance.new("TextButton")
-local TextButton = Instance.new("TextButton")
+local Line2 = Instance.new("Frame")
+local Line3 = Instance.new("Frame")
+local CashCounter = Instance.new("TextLabel")
+local Line = Instance.new("Frame")
+local Crash = Instance.new("TextButton")
+local Line4 = Instance.new("Frame")
+local ADmin = Instance.new("TextButton")
+local Line5 = Instance.new("Frame")
+local Link = Instance.new("TextButton")
+local Line6 = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
+local PlayersCounter = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.412766039, 0, 0.364021152, 0)
-Frame.Size = UDim2.new(0, 244, 0, 257)
-RainbotShit.Name = "RainbotShit"
-RainbotShit.Parent = Frame
-RainbotShit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-RainbotShit.BorderColor3 = Color3.fromRGB(25, 25, 25)
-RainbotShit.BorderSizePixel = 0
-RainbotShit.Position = UDim2.new(2.50144069e-07, 0, 0.06585446, 0)
-RainbotShit.Size = UDim2.new(0, 243, 0, 206)
-Frame_2.Parent = RainbotShit
-Frame_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Frame_2.BorderColor3 = Color3.fromRGB(25, 25, 25)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(-2.51173475e-07, 0, -0.0821582079, 0)
-Frame_2.Size = UDim2.new(0, 243, 0, 221)
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.377304971, 0, 0.394709021, 0)
+ImageLabel.Size = UDim2.new(0, 346, 0, 198)
+ImageLabel.Image = "rbxassetid://10104794879"
+
 TARGETTEXTBOX.Name = "TARGETTEXTBOX"
-TARGETTEXTBOX.Parent = Frame_2
-TARGETTEXTBOX.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TARGETTEXTBOX.Parent = ImageLabel
+TARGETTEXTBOX.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 TARGETTEXTBOX.BorderSizePixel = 0
-TARGETTEXTBOX.Position = UDim2.new(0.0315333232, 0, 0.048780486, 0)
-TARGETTEXTBOX.Size = UDim2.new(0, 228, 0, 37)
+TARGETTEXTBOX.Position = UDim2.new(0.0173410848, 0, 0.0353533812, 0)
+TARGETTEXTBOX.Size = UDim2.new(0, 163, 0, 39)
 TARGETTEXTBOX.Font = Enum.Font.Code
-TARGETTEXTBOX.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
-TARGETTEXTBOX.PlaceholderText = "Player's Name"
+TARGETTEXTBOX.PlaceholderText = "Players Name"
 TARGETTEXTBOX.Text = ""
 TARGETTEXTBOX.TextColor3 = Color3.fromRGB(255, 255, 255)
 TARGETTEXTBOX.TextSize = 15.000
+
+Line1.Name = "Line1"
+Line1.Parent = ImageLabel
+Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Line1.BorderSizePixel = 0
+Line1.Position = UDim2.new(0.0173410848, 0, 0.238938153, 0)
+Line1.Size = UDim2.new(0, 163, 0, 1)
+
 Goto.Name = "Goto"
-Goto.Parent = Frame_2
-Goto.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Goto.Parent = ImageLabel
+Goto.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Goto.BorderSizePixel = 0
-Goto.Position = UDim2.new(0.0260205679, 0, 0.286232919, 0)
-Goto.Size = UDim2.new(0, 228, 0, 30)
-Goto.Font = Enum.Font.SourceSans
+Goto.Position = UDim2.new(0.0173412059, 0, 0.282828122, 0)
+Goto.Size = UDim2.new(0, 78, 0, 30)
+Goto.Font = Enum.Font.Code
 Goto.Text = "GoTo"
 Goto.TextColor3 = Color3.fromRGB(255, 255, 255)
 Goto.TextSize = 15.000
+
 A_VIEW.Name = "A_VIEW"
-A_VIEW.Parent = Frame_2
-A_VIEW.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+A_VIEW.Parent = ImageLabel
+A_VIEW.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 A_VIEW.BorderSizePixel = 0
-A_VIEW.Position = UDim2.new(0.0260205679, 0, 0.468111336, 0)
-A_VIEW.Size = UDim2.new(0, 228, 0, 30)
-A_VIEW.Font = Enum.Font.SourceSans
+A_VIEW.Position = UDim2.new(0.260055333, 0, 0.282828122, 0)
+A_VIEW.Size = UDim2.new(0, 78, 0, 30)
+A_VIEW.Font = Enum.Font.Code
 A_VIEW.Text = "View"
 A_VIEW.TextColor3 = Color3.fromRGB(255, 255, 255)
 A_VIEW.TextSize = 15.000
-ADminBase.Name = "ADminBase"
-ADminBase.Parent = Frame_2
-ADminBase.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-ADminBase.BorderSizePixel = 0
-ADminBase.Position = UDim2.new(0.0260205679, 0, 0.649989724, 0)
-ADminBase.Size = UDim2.new(0, 228, 0, 30)
-ADminBase.Font = Enum.Font.SourceSans
-ADminBase.Text = "Admin Base"
-ADminBase.TextColor3 = Color3.fromRGB(255, 255, 255)
-ADminBase.TextSize = 15.000
-TextButton.Parent = Frame_2
-TextButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0260205679, 0, 0.831868052, 0)
-TextButton.Size = UDim2.new(0, 228, 0, 30)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Load Swagmode Crasher"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 15.000
-TextLabel.Parent = Frame
+
+Line2.Name = "Line2"
+Line2.Parent = ImageLabel
+Line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Line2.BorderSizePixel = 0
+Line2.Position = UDim2.new(0.0173410848, 0, 0.430857509, 0)
+Line2.Size = UDim2.new(0, 78, 0, 1)
+
+Line3.Name = "Line3"
+Line3.Parent = ImageLabel
+Line3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Line3.BorderSizePixel = 0
+Line3.Position = UDim2.new(0.259431839, 0, 0.431122899, 0)
+Line3.Size = UDim2.new(0, 78, 0, 1)
+
+CashCounter.Name = "CashCounter"
+CashCounter.Parent = ImageLabel
+CashCounter.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+CashCounter.BorderSizePixel = 0
+CashCounter.Position = UDim2.new(0.511560917, 0, 0.0353533812, 0)
+CashCounter.Size = UDim2.new(0, 162, 0, 39)
+CashCounter.Font = Enum.Font.Code
+CashCounter.Text = "$100,000,000"
+CashCounter.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashCounter.TextSize = 16.000
+
+Line.Name = "Line"
+Line.Parent = ImageLabel
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.511560738, 0, 0.233887643, 0)
+Line.Size = UDim2.new(0, 163, 0, 1)
+
+Crash.Name = "Crash"
+Crash.Parent = ImageLabel
+Crash.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Crash.BorderSizePixel = 0
+Crash.Position = UDim2.new(0.512170136, 0, 0.272727132, 0)
+Crash.Size = UDim2.new(0, 161, 0, 30)
+Crash.Font = Enum.Font.Code
+Crash.Text = "Crash"
+Crash.TextColor3 = Color3.fromRGB(255, 255, 255)
+Crash.TextSize = 15.000
+
+Line4.Name = "Line4"
+Line4.Parent = ImageLabel
+Line4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Line4.BorderSizePixel = 0
+Line4.Position = UDim2.new(0.510876894, 0, 0.421021909, 0)
+Line4.Size = UDim2.new(0, 161, 0, 1)
+
+ADmin.Name = "ADmin"
+ADmin.Parent = ImageLabel
+ADmin.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ADmin.BorderSizePixel = 0
+ADmin.Position = UDim2.new(0.0157503951, 0, 0.494949341, 0)
+ADmin.Size = UDim2.new(0, 161, 0, 30)
+ADmin.Font = Enum.Font.Code
+ADmin.Text = "Admin Base"
+ADmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+ADmin.TextSize = 15.000
+
+Line5.Name = "Line5"
+Line5.Parent = ImageLabel
+Line5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Line5.BorderSizePixel = 0
+Line5.Position = UDim2.new(0.0144510325, 0, 0.643244088, 0)
+Line5.Size = UDim2.new(0, 161, 0, 1)
+
+Link.Name = "Link"
+Link.Parent = ImageLabel
+Link.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Link.BorderSizePixel = 0
+Link.Position = UDim2.new(0.513462305, 0, 0.494949341, 0)
+Link.Size = UDim2.new(0, 159, 0, 30)
+Link.Font = Enum.Font.Code
+Link.Text = "Discord Link"
+Link.TextColor3 = Color3.fromRGB(255, 255, 255)
+Link.TextSize = 15.000
+
+Line6.Name = "Line6"
+Line6.Parent = ImageLabel
+Line6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Line6.BorderSizePixel = 0
+Line6.Position = UDim2.new(0.512170136, 0, 0.643244088, 0)
+Line6.Size = UDim2.new(0, 159, 0, 1)
+
+Frame.Parent = ImageLabel
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.034682259, 0, 0.686868548, 0)
+Frame.Size = UDim2.new(0, 318, 0, 0)
+
+TextLabel.Parent = ImageLabel
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0, 0, 0.867410719, 0)
-TextLabel.Size = UDim2.new(0, 107, 0, 34)
+TextLabel.Position = UDim2.new(0.329479814, 0, 0.686868548, 0)
+TextLabel.Size = UDim2.new(0, 117, 0, 23)
 TextLabel.Font = Enum.Font.Code
-TextLabel.Text = "$100,000,000"
+TextLabel.Text = "Player Count:"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 15.000
-TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-TextLabel_2.Parent = Frame
+
+PlayersCounter.Name = "PlayersCounter"
+PlayersCounter.Parent = ImageLabel
+PlayersCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayersCounter.BackgroundTransparency = 1.000
+PlayersCounter.Position = UDim2.new(0.447976917, 0, 0.838383675, 0)
+PlayersCounter.Size = UDim2.new(0, 31, 0, 23)
+PlayersCounter.Font = Enum.Font.Code
+PlayersCounter.Text = "38"
+PlayersCounter.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayersCounter.TextSize = 19.000
+
+TextLabel_2.Parent = ImageLabel
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.438524604, 0, 0.867410719, 0)
-TextLabel_2.Size = UDim2.new(0, 93, 0, 34)
+TextLabel_2.Position = UDim2.new(0, 0, -0.116161615, 0)
+TextLabel_2.Size = UDim2.new(0, 89, 0, 23)
 TextLabel_2.Font = Enum.Font.Code
-TextLabel_2.Text = "Count Player:"
+TextLabel_2.Text = "ZANDRA#6163"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 14.000
+TextLabel_2.TextSize = 15.000
+TextLabel_2.TextStrokeTransparency = 0.000
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
-TextLabel_3.Parent = Frame
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.819556296, 0, 0.867410719, 0)
-TextLabel_3.Size = UDim2.new(0, 22, 0, 34)
-TextLabel_3.Font = Enum.Font.Code
-TextLabel_3.Text = "38"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
 -- Scripts:
-local function SRXFBY_fake_script() 
-	local script = Instance.new('LocalScript', RainbotShit)
-	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
-	counter = 0
-	while wait(0)do
-		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
-		counter = counter + 0.01
-	end
-end
-coroutine.wrap(SRXFBY_fake_script)()
-local function LBHCX_fake_script()
+
+local function VFKLE_fake_script() -- Goto.LocalScript 
 	local script = Instance.new('LocalScript', Goto)
+
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[TARGETTEXTBOX.Text].Character.UpperTorso.Position)
 	end)
 end
-coroutine.wrap(LBHCX_fake_script)()
-local function BYKOHRI_fake_script() 
+coroutine.wrap(VFKLE_fake_script)()
+local function LOFWE_fake_script() -- A_VIEW.LocalScript 
 	local script = Instance.new('LocalScript', A_VIEW)
 
-	script.Parent.MouseButton1Click:connect(function()
+	A_VIEW.MouseButton1Click:connect(function()
 		if A_VIEW.Text == 'VIEW' then
 			A_VIEW.Text = 'UNVIEW'
 			repeat view(TARGETTEXTBOX.Text) until A_VIEW.Text == 'VIEW'
@@ -154,71 +258,9 @@ local function BYKOHRI_fake_script()
 		end
 	end
 end
-coroutine.wrap(BYKOHRI_fake_script)()
-local function WXSVDO_fake_script()
-	local script = Instance.new('LocalScript', ADminBase)
-	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-872.030029296875, -38.401187896728516, -585.260009765625)
-	end)
-end
-coroutine.wrap(WXSVDO_fake_script)()
-local function FKKSHOA_fake_script()
-	local script = Instance.new('LocalScript', TextButton)
-	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
-	end)
-end
-coroutine.wrap(FKKSHOA_fake_script)()
-local function DVVO_fake_script()
-	local script = Instance.new('LocalScript', TextLabel)
-	while wait() do
-		pcall(function()
-			local amount = 0
-			for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
-				if v.Name == "MoneyDrop" then
-					local cash = string.split(v.BillboardGui.TextLabel.Text,"$")[2]
-					if string.match(cash,',') then
-						amount = amount + cash:gsub("%,","")
-					else
-						amount = amount + cash
-					end
-				end
-			end
-			local function checking(amount)
-				amount = tostring(amount)
-				return amount:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
-			end
-			script.Parent.Text = "$"..checking(amount).." dropped"
-		end)
-	end
-end
-coroutine.wrap(DVVO_fake_script)()
-local function HDHONK_fake_script() -- TextLabel_2.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_2)
-	while wait() do
-		pcall(function()
-			local amount = 0
-			for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
-				if v.Name == "MoneyDrop" then
-					local cash = string.split(v.BillboardGui.TextLabel.Text,"$")[2]
-					if string.match(cash,',') then
-						amount = amount + cash:gsub("%,","")
-					else
-						amount = amount + cash
-					end
-				end
-			end
-			local function checking(amount)
-				amount = tostring(amount)
-				return amount:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
-			end
-			script.Parent.Text = "$"..checking(amount).." dropped"
-		end)
-	end
-end
-coroutine.wrap(HDHONK_fake_script)()
-local function ZQWDWR_fake_script() -- TextLabel_3.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_3)
+coroutine.wrap(LOFWE_fake_script)()
+local function QIFQU_fake_script() -- CashCounter.LocalScript 
+	local script = Instance.new('LocalScript', CashCounter)
 
 	while wait() do
 		pcall(function()
@@ -241,18 +283,42 @@ local function ZQWDWR_fake_script() -- TextLabel_3.LocalScript
 		end)
 	end
 end
-coroutine.wrap(ZQWDWR_fake_script)()
-local function BBTWU_fake_script() -- TextLabel_3.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_3)
+coroutine.wrap(QIFQU_fake_script)()
+local function UYSMIB_fake_script() -- Crash.LocalScript 
+	local script = Instance.new('LocalScript', Crash)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+	end)
+end
+coroutine.wrap(UYSMIB_fake_script)()
+local function CAGNC_fake_script() -- ADmin.LocalScript 
+	local script = Instance.new('LocalScript', ADmin)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-872.030029296875, -38.401187896728516, -585.260009765625)
+	end)
+end
+coroutine.wrap(CAGNC_fake_script)()
+local function NMLDDZS_fake_script() -- Link.LocalScript 
+	local script = Instance.new('LocalScript', Link)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		setclipboard("https://discord.gg/WKYADFeSdf")
+	end)
+end
+coroutine.wrap(NMLDDZS_fake_script)()
+local function VOFH_fake_script() -- PlayersCounter.LocalScript 
+	local script = Instance.new('LocalScript', PlayersCounter)
 
 	while true do
 		script.Parent.Text = ""..game.Players.NumPlayers
 		wait(1)
 	end
 end
-coroutine.wrap(BBTWU_fake_script)()
-local function RLZMW_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(VOFH_fake_script)()
+local function AJON_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
 
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
@@ -267,6 +333,7 @@ local function RLZMW_fake_script() -- Frame.LocalScript
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
+	
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -279,6 +346,7 @@ local function RLZMW_fake_script() -- Frame.LocalScript
 			end)
 		end
 	end)
+	
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -287,4 +355,4 @@ local function RLZMW_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RLZMW_fake_script)()
+coroutine.wrap(AJON_fake_script)()
