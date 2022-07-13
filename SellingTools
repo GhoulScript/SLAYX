@@ -46,7 +46,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ImageLabel.Parent = ScreenGui
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.377304971, 0, 0.394709021, 0)
+ImageLabel.Position = UDim2.new(0.377304971, 0, 0.658201098, 0)
 ImageLabel.Size = UDim2.new(0, 346, 0, 198)
 ImageLabel.Image = "rbxassetid://10104794879"
 
@@ -225,15 +225,15 @@ TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function VFKLE_fake_script() -- Goto.LocalScript 
+local function BIGDWIN_fake_script() -- Goto.LocalScript 
 	local script = Instance.new('LocalScript', Goto)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[TARGETTEXTBOX.Text].Character.UpperTorso.Position)
 	end)
 end
-coroutine.wrap(VFKLE_fake_script)()
-local function LOFWE_fake_script() -- A_VIEW.LocalScript 
+coroutine.wrap(BIGDWIN_fake_script)()
+local function PRCORDB_fake_script() -- A_VIEW.LocalScript 
 	local script = Instance.new('LocalScript', A_VIEW)
 
 	A_VIEW.MouseButton1Click:connect(function()
@@ -258,8 +258,8 @@ local function LOFWE_fake_script() -- A_VIEW.LocalScript
 		end
 	end
 end
-coroutine.wrap(LOFWE_fake_script)()
-local function QIFQU_fake_script() -- CashCounter.LocalScript 
+coroutine.wrap(PRCORDB_fake_script)()
+local function ICWQ_fake_script() -- CashCounter.LocalScript 
 	local script = Instance.new('LocalScript', CashCounter)
 
 	while wait() do
@@ -283,32 +283,32 @@ local function QIFQU_fake_script() -- CashCounter.LocalScript
 		end)
 	end
 end
-coroutine.wrap(QIFQU_fake_script)()
-local function UYSMIB_fake_script() -- Crash.LocalScript 
+coroutine.wrap(ICWQ_fake_script)()
+local function KYJV_fake_script() -- Crash.LocalScript 
 	local script = Instance.new('LocalScript', Crash)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 	end)
 end
-coroutine.wrap(UYSMIB_fake_script)()
-local function CAGNC_fake_script() -- ADmin.LocalScript 
+coroutine.wrap(KYJV_fake_script)()
+local function NBIJ_fake_script() -- ADmin.LocalScript 
 	local script = Instance.new('LocalScript', ADmin)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-872.030029296875, -38.401187896728516, -585.260009765625)
 	end)
 end
-coroutine.wrap(CAGNC_fake_script)()
-local function NMLDDZS_fake_script() -- Link.LocalScript 
+coroutine.wrap(NBIJ_fake_script)()
+local function SGJER_fake_script() -- Link.LocalScript 
 	local script = Instance.new('LocalScript', Link)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		setclipboard("https://discord.gg/WKYADFeSdf")
 	end)
 end
-coroutine.wrap(NMLDDZS_fake_script)()
-local function VOFH_fake_script() -- PlayersCounter.LocalScript 
+coroutine.wrap(SGJER_fake_script)()
+local function YPXXR_fake_script() -- PlayersCounter.LocalScript 
 	local script = Instance.new('LocalScript', PlayersCounter)
 
 	while true do
@@ -316,8 +316,8 @@ local function VOFH_fake_script() -- PlayersCounter.LocalScript
 		wait(1)
 	end
 end
-coroutine.wrap(VOFH_fake_script)()
-local function AJON_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(YPXXR_fake_script)()
+local function DVYNT_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local UIS = game:GetService('UserInputService')
@@ -355,4 +355,4 @@ local function AJON_fake_script() -- ImageLabel.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AJON_fake_script)()
+coroutine.wrap(DVYNT_fake_script)()
